@@ -34,7 +34,7 @@ export default function Home() {
       <div className="flex flex-col">
         <div className="flex flex-col gap-5 items-center w-[75vw]">
           <div className="text-7xl text-center">KEVYN'S OFFICAL <br></br> BIRTHDAY INVITATION</div>
-          <p className="text-2xl text-center text-wrap">You have been corgially invited to my 26th birthday. The event details are provided below but there is a catch. I have gamified this invitation! Play each game in order to unlock details of the party. Good Luck {":)"} </p>
+          <p className="text-2xl text-center text-wrap">You have been cordially invited to my 26th birthday. The event details are provided below but there is a catch. I have gamified this invitation! Play each game in order to unlock details of the party. Good Luck {":)"} </p>
         </div>
         <div className="flex" id="game-selection">
           <div className="flex flex-col items-center rounded-x-full gap-4 w-[25vw] h-[25vh] pt-[3vh]" id="date">
