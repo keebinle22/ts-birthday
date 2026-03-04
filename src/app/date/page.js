@@ -72,17 +72,17 @@ export default function Page(){
                                 className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95"
                             >
                                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                                    <div className="sm:flex sm:items-start">
+                                    <div className="">
                                         {/* <div className="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:size-10">
                                             <ExclamationTriangleIcon aria-hidden="true" className="size-6 text-red-600" />
                                         </div> */}
-                                        <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                        <div className="mt-3 text-center sm:mt-0 sm:ml-4">
                                             <DialogTitle as="h3" className="text-base font-semibold text-gray-900">
                                                 That is Incorrect
                                             </DialogTitle>
                                             <div className="mt-2">
                                                 <p className="text-sm text-gray-500">
-                                                    Incorrect ho
+                                                    Do you even know me?
                                                 </p>
                                             </div>
                                         </div>
@@ -112,7 +112,7 @@ export default function Page(){
                             <span className="text-5xl">{month < 10 ? "0": ""}{month}</span>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <button className="border sm:size-[3.2vw] size-[7vw] hover:bg-gray-200 active:bg-gray-500" onClick={() => modifyMonth(1)} disabled={corMon}>
+                            <button className="border sm:size-[2.5vw] size-[7vw] hover:bg-gray-200 active:bg-gray-500" onClick={() => modifyMonth(1)} disabled={corMon}>
                                 <svg
                                     fill="#000000"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +144,7 @@ export default function Page(){
                             <span className="text-5xl">{day < 10 ? "0" : ""}{day}</span>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <button className="border hover:bg-gray-200 active:bg-gray-500 size-[7vw] sm:size-[3.2vw]" onClick={() => modifyDay(1)} disabled={corDay}>
+                            <button className="border hover:bg-gray-200 active:bg-gray-500 size-[7vw] sm:size-[2.5vw]" onClick={() => modifyDay(1)} disabled={corDay}>
                                 <svg
                                     fill="#000000"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +179,7 @@ export default function Page(){
                             {!yearHint && <span className="text-5xl">{year}</span>}
                         </div>
                         <div className="flex flex-col gap-2">
-                            <button className="border hover:bg-gray-200 active:bg-gray-500 size-[7vw] sm:size-[3.2vw]" onClick={() => modifyYear(1)}>
+                            <button className="border hover:bg-gray-200 active:bg-gray-500 size-[7vw] sm:size-[2.5vw]" onClick={() => modifyYear(1)}>
                                 <svg
                                     fill="#000000"
                                     xmlns="http://www.w3.org/2000/svg"
