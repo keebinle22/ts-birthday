@@ -102,7 +102,7 @@ export default function Page(){
                     </div>
                 </Dialog>
             <div className="flex flex-col gap-4 items-center">
-                <span className="text-3xl">{questions[qPtr]}</span>
+                <span className="text-3xl text-center">{questions[qPtr]}</span>
                 {yearHint && <span className="text-lg">Jk LMAO {"YY"} would be sufficient</span>}
             </div>
             <div className="flex gap-10" id="dob">
@@ -210,9 +210,9 @@ export default function Page(){
                 {!complete && <button className="border bg-sky-400 hover:bg-sky-300 active:bg-sky-600 transition duration-100 ease-in-out hover:scale-105 px-4 py-1 rounded-full text-white font-bold text-lg" onClick={checkDay} id="submit">Submit</button>}
                 {complete &&
                 <div className="flex flex-col gap-1 items-center">
-                    <span className="text-2xl font-bold">Complete 🥳</span>
-                    <p>Hooray! The party will take place on Saturday, March 21!</p>
-                    <p>Password for the next game: <b>climber</b></p>
+                    <span className="text-2xl text-center font-bold">Complete 🥳</span>
+                    <p className="text-center">Hooray! The party will take place on Saturday, March 21!</p>
+                    <p className="text-center">Password for the next game: <b>climber</b></p>
                     <Link href={"/"}>
                             <button className="border bg-sky-400 hover:bg-sky-300 active:bg-sky-600 transition duration-100 ease-in-out hover:scale-105 px-4 py-1 rounded-full text-white font-bold text-lg">Back</button>
                     </Link>

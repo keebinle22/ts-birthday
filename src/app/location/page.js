@@ -122,7 +122,7 @@ export default function Page(){
     return (
         <div className="flex flex-col items-center space-y-6 py-8 min-h-screen">
             <h1 className="text-3xl font-bold">Wordle</h1>
-            <p>Good luck</p>
+            <p>Good luck {"(scroll --> if on mobile)"}</p>
 
             {/* BOARD */}
             <div className="w-full px-2 overflow-x-auto">

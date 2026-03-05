@@ -17,7 +17,7 @@ export default function Home() {
     setTimeInput(evt.target.value);
   }
   const handleTimePW = () => {
-    if (timeInput === "climber"){
+    if (timeInput.toLowerCase() === "climber"){
       setEnableTime(true);
     }
   }
@@ -25,7 +25,7 @@ export default function Home() {
     setLocInput(evt.target.value);
   }
   const handleLocPW = () => {
-    if (locInput === "gamers") {
+    if (locInput.toLowerCase() === "gamers") {
       setEnableLoc(true);
     }
   }
