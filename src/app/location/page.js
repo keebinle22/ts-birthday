@@ -5,7 +5,7 @@ import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/re
 import Link from "next/link";
 
 export default function Page(){
-    const NUMBER_OF_GUESSES = 6;
+    const NUMBER_OF_GUESSES = 15;
     const WORDS = [
         "fuckitweballletstakeshots"
     ];

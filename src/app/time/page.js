@@ -21,19 +21,8 @@ export default function Page(){
         false,
         false,
         true,
-        false,
-        true,
-        false,
-        true,
-        false,
-        true,
-        true,
-        false,
-        true,
-        true,
-        true,
     ];
-    const [userPath, setUserPath] = useState(new Array(26).fill(true));
+    const [userPath, setUserPath] = useState(new Array(15).fill(true));
     const [ptr, setPtr] = useState(0);
     const [wrong, setWrong] = useState(false);
     const [complete, setComplete] = useState(false);
@@ -193,7 +182,7 @@ export default function Page(){
             </Dialog>
             <div className="flex flex-col gap-5 items-center w-[50vw]">
                 <span className="text-4xl text-center">Glass Bridge Game</span>
-                <p className="text-sm sm:text-lg">Help! Multiple animals have been dropped into Squid Game and must cross the glass bridge to survive. Choose wisely — one wrong step and the glass will shatter beneath them. Guide them safely across!</p>
+                <p className="text-sm sm:text-lg">Help! Multiple animals have been dropped into Squid Game and must cross the glass bridge to survive. Choose wisely — one wrong step and the glass will shatter beneath them. Guide them safely across! {"(yes those blue squares are supposed to be glass panes. im no ux designer)"}</p>
             </div>
             <div className="flex flex-col-reverse items-center border-2 rounded-4xl">
                 <div className="bg-orange-800 w-[50vw] h-10 rounded-b-4xl"/>

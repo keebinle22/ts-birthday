@@ -17,9 +17,9 @@ export default function Page(){
     
     const [qPtr, setQptr] = useState(0);
     const questions = [
-        "What month was Kevyn born?",
-        "What day was Kevyn born?",
-        "What year was Kevyn born?"
+        "What month was Kevyn born? (MM)",
+        "What day was Kevyn born? (DD)",
+        "What year was Kevyn born? (YYYY)"
     ];
     const modifyMonth = (input) => {
         if (month + input >= 1 && month + input <= 12){
@@ -33,7 +33,7 @@ export default function Page(){
     }
     const modifyYear = (input) => {
         if (year + input >= 0) {
-            if (year + input >= 50){
+            if (year + input >= 25){
                 setYearHint(true);
             }
             setYear(year + input);
@@ -103,7 +103,7 @@ export default function Page(){
                 </Dialog>
             <div className="flex flex-col gap-4 items-center">
                 <span className="text-3xl">{questions[qPtr]}</span>
-                {yearHint && <span className="text-lg">Hint: mm/dd/yy</span>}
+                {yearHint && <span className="text-lg">Jk LMAO {"YY"} would be sufficient</span>}
             </div>
             <div className="flex gap-10" id="dob">
                 <div className="flex flex-col" id="month">
